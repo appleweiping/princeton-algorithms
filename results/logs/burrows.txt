@@ -1,0 +1,23 @@
+=== CircularSuffixArray verification ===
+  OK  CSA length==12
+  OK  CSA index==[11,10,7,0,3,5,8,1,4,6,9,2]
+  OK  CSA single char length==1
+  OK  CSA empty length==0
+  OK index(99) throws IAE
+  OK null string throws IAE
+PASS=6 FAIL=0
+BURROWS CSA VERIFY PASS
+
+=== BWT round-trip (ABRACADABRA!) ===
+original:  ABRACADABRA!
+recovered: ABRACADABRA!
+BWT transform/inverse round-trip: PASS
+
+=== MoveToFront round-trip ===
+MTF encode/decode round-trip: PASS
+
+=== Full compression pipeline: BWT- | MTF- | Huffman- (and inverse) ===
+corpus (real source files): 27974 bytes
+BWT+MTF+Huffman compressed:  8326 bytes  (29.8% of original, 3.36x reduction)
+Huffman-only (baseline):     16399 bytes  (58.6% of original)
+decompression round-trip:    PASS (lossless)
