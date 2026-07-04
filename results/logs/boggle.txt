@@ -1,0 +1,22 @@
+=== BoggleSolver on board4x4.txt (369k-word English dictionary) ===
+Words = 281
+Score = 427
+
+=== BoggleSolver on board-qu.txt (contains Qu die) ===
+Words = 619
+Score = 1299
+
+=== Verification: scoring, Qu rule, brute-force cross-check, performance ===
+  OK  scoreOf(CAT)==1 (got 1)
+  OK  scoreOf(MOUSE)==2 (got 2)
+  OK  scoreOf(PIGEON)==3 (got 3)
+  OK  scoreOf(PICTURE)==5 (got 5)
+  OK  scoreOf(PINEAPPLE)==11 (got 11)
+  OK  scoreOf(ZZZZZ)==0 (got 0)
+  OK  scoreOf(QUEEN)==2 (got 2)
+  OK  Qu board finds QUEEN
+  OK  solver == brute-force on 3x3 board (232 words)
+  performance: 5000 random 4x4 boards in 1038 ms = 4817 boards/sec (897512 total words)
+  OK  performance > 1000 boards/sec
+PASS=10 FAIL=0
+BOGGLE VERIFY PASS

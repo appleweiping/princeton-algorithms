@@ -13,3 +13,4 @@ data/
 .vscode/
 .DS_Store
 Thumbs.db
+data/boggle/dictionary-english.txt
