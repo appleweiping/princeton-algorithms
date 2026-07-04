@@ -1,0 +1,52 @@
+=== Board.main: hamming/manhattan/neighbors/twin ===
+3
+ 8  1  3 
+ 4  0  2 
+ 7  6  5 
+dimension=3
+hamming=5
+manhattan=10
+isGoal=false
+neighbors:
+3
+ 8  0  3 
+ 4  1  2 
+ 7  6  5 
+
+3
+ 8  1  3 
+ 4  6  2 
+ 7  0  5 
+
+3
+ 8  1  3 
+ 0  4  2 
+ 7  6  5 
+
+3
+ 8  1  3 
+ 4  2  0 
+ 7  6  5 
+
+twin:
+3
+ 1  8  3 
+ 4  0  2 
+ 7  6  5 
+
+
+=== Solver puzzle04.txt (expect 4 moves) ===
+Minimum number of moves = 4
+solution path has 5 boards (expect moves+1 = 5)
+
+=== Solver puzzle07.txt (expect 7 moves) ===
+Minimum number of moves = 7
+
+=== Solver puzzle-unsolvable.txt ===
+No solution possible
+
+=== Solver puzzle07.txt ===
+Minimum number of moves = 7
+
+=== Solver puzzle31.txt (hardest 3x3) ===
+Minimum number of moves = 31 (elapsed 1881 ms)
