@@ -1,0 +1,32 @@
+=== SAP on digraph1.txt (queries: 3-11, 9-12, 7-2, 1-6) ===
+length = 4, ancestor = 1
+length = 3, ancestor = 5
+length = 4, ancestor = 0
+length = -1, ancestor = -1
+
+=== WordNet/SAP/Outcast verification (assignment digraph1 + small hierarchy) ===
+  OK  length(3,11) = 4
+  OK  ancestor(3,11) = 1
+  OK  length(9,12) = 3
+  OK  ancestor(9,12) = 5
+  OK  length(7,2) = 4
+  OK  ancestor(7,2) = 0
+  OK  length(1,6) = -1
+  OK  ancestor(1,6) = -1
+  OK  length(3,3) = 0
+  OK  isNoun(dog) = true
+  OK  isNoun(unicorn) = false
+  OK  isNoun(canine synonym) = true
+  OK  distance(dog,cat) = 2
+  OK  sap(dog,cat) = mammal
+  OK  distance(dog,worm) = 3
+  OK  sap(dog,worm) = animal creature
+  OK  distance(cat,bird) = 3
+  OK  sap(cat,bird) = animal creature
+  OK  distance(dog,attribute) = 6
+  OK  outcast = attribute
+PASS=20 FAIL=0
+WORDNET VERIFY PASS
+
+=== Outcast client on outcast-small.txt ===
+data/wordnet/outcast-small.txt: attribute

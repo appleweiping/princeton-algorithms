@@ -1,0 +1,11 @@
+0,entity,the root of everything
+1,physical_entity,a physical thing
+2,abstraction abstract_entity,a non-physical thing
+3,animal creature,a living organism
+4,plant flora,a living plant
+5,attribute,a construct or property
+6,mammal,a warm-blooded animal
+7,bird,a feathered animal
+8,dog canine,a domesticated carnivore
+9,cat feline,a small carnivore
+10,worm,a small legless invertebrate
