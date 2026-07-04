@@ -1,0 +1,15 @@
+=== Percolation.main sanity ===
+openSites=3
+percolates=true
+isFull(3,1)=true
+isFull(2,1)=true
+
+=== Backwash prevention test ===
+percolates=true (expect true)
+isFull(3,3)=false (expect false = no backwash)
+BACKWASH TEST PASS
+
+=== PercolationStats 200 100 (known p* ~ 0.5927) ===
+mean                    = 0.592060
+stddev                  = 0.009616
+95% confidence interval = [0.590175, 0.593945]
