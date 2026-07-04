@@ -1,0 +1,15 @@
+# Compiled classes
+*.class
+out/
+bin/
+
+# Data files (downloaded at runtime, may be large / course-owned)
+data/
+*.txt.gz
+
+# OS / IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
