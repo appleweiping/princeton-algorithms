@@ -1,0 +1,30 @@
+=== Point.main slope conventions ===
+slope to (1,1) = 1.0
+slope to (2,0) = 0.0
+slope to (0,5) = Infinity
+slope to (0,0) = -Infinity
+compareTo (0,1): -1
+
+=== input8.txt (2 segments, brute == fast) ===
+Brute-force: 2 segment(s)
+  (10000, 0) -> (0, 10000)
+  (3000, 4000) -> (20000, 21000)
+Fast: 2 segment(s)
+  (10000, 0) -> (0, 10000)
+  (3000, 4000) -> (20000, 21000)
+
+=== input6.txt (5 collinear on y=10000; fast finds 1 maximal) ===
+Brute-force: 5 segment(s)
+  (14000, 10000) -> (21000, 10000)
+  (14000, 10000) -> (32000, 10000)
+  (14000, 10000) -> (32000, 10000)
+  (14000, 10000) -> (32000, 10000)
+  (18000, 10000) -> (32000, 10000)
+Fast: 1 segment(s)
+  (14000, 10000) -> (32000, 10000)
+
+=== Random stress + timing ===
+Random stress (brute vs fast), 2000 trials: 2000 agree, 0 mismatch
+Known diagonal: fast finds 1 segment(s) (expect 1): [(0, 0) -> (3, 3)]
+Fast timing: n=800 -> 446 ms, n=1600 -> 886 ms (ratio 1.99)
+COLLINEAR VERIFY PASS
