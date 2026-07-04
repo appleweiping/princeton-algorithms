@@ -1,0 +1,16 @@
+  OK energy(1,1) = 189.0106 (expected 189.0106)
+  OK energy(0,0) = 1000.0000 (expected 1000.0000)
+  OK energy(2,2) = 1000.0000 (expected 1000.0000)
+  OK energy(1,0) = 1000.0000 (expected 1000.0000)
+  OK  vertical seam len==height(3)
+  OK  vertical seam adjacency
+  OK  horizontal seam len==width(3)
+  OK  horizontal seam adjacency
+  OK  min vertical seam follows low-energy channel (col 2): [2, 2, 2, 2, 1]
+  OK  carved 50 vertical + 30 horizontal seams: 150x100 -> 100x70 in 75 ms
+saved carved image to D:\Project\algorithms\princeton-algorithms\results\seam_carved.png
+  OK  removeVerticalSeam(null) throws IAE
+  OK  energy out of range throws IAE
+  OK  non-adjacent seam throws IAE
+PASS=13 FAIL=0
+SEAM VERIFY PASS
