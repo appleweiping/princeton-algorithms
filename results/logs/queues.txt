@@ -1,0 +1,30 @@
+=== Deque.main ===
+order front->back: 0 1 2
+size=3
+removeFirst=0
+removeLast=2
+size=1
+isEmpty=false
+
+=== RandomizedQueue.main ===
+size=5
+sample in [1,5]: 4
+one random order: 5 3 2 1 4
+dequeued two: 1, 2
+size=3
+
+=== Iterator independence + dequeue uniformity ===
+iter1=2178045693
+iter2=6430518297
+both are permutations of 0-9: true
+dequeue-first distribution over 400000 trials (expect ~100000 each):
+  elem 0: 99911 (24.98%)
+  elem 1: 100165 (25.04%)
+  elem 2: 99905 (24.98%)
+  elem 3: 100019 (25.00%)
+QUEUES TEST PASS
+
+=== Permutation 3 < (A..I) ===
+G
+E
+D
