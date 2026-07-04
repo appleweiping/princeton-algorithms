@@ -1,0 +1,33 @@
+=== teams4.txt ===
+Atlanta is not eliminated
+Philadelphia is eliminated by the subset R = { Atlanta New_York }
+New_York is not eliminated
+Montreal is eliminated by the subset R = { Atlanta }
+
+=== teams5.txt ===
+New_York is not eliminated
+Baltimore is not eliminated
+Boston is not eliminated
+Toronto is not eliminated
+Detroit is eliminated by the subset R = { New_York Baltimore Boston Toronto }
+
+=== Assertion-based verification ===
+  OK  wins(Atlanta)==83
+  OK  losses(Atlanta)==71
+  OK  remaining(Atlanta)==8
+  OK  against(Atlanta,Philadelphia)==1
+  OK  numberOfTeams==4
+  OK  Atlanta not eliminated
+  OK  NewYork not eliminated
+  OK  Philadelphia eliminated
+  OK  Montreal eliminated
+  OK  Philadelphia cert == {Atlanta,New_York}
+  OK  Montreal cert == {Atlanta}
+  OK  cert for non-eliminated Atlanta is null
+  OK  d5 Detroit eliminated
+  OK  d5 Detroit cert == {NY,Bal,Bos,Tor}
+  OK  d5 New_York not eliminated
+  OK  d5 Toronto not eliminated
+  OK invalid team throws IAE
+PASS=17 FAIL=0
+BASEBALL VERIFY PASS
